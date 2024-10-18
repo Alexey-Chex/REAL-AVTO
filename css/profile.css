@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /*background-color: #212121;*/
+    background: linear-gradient(163deg, rgba(21,21,22,1) 0%, rgba(14,46,75,1) 100%);
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+#header {
+    background-color: #fff;
+    height: 250px;
+    background-size: 100% auto;
+    top: 0px;
+    background-image: url("../images/mazda.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+
+.logo{
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+    line-height: 50px;
+    margin-left: 3%;
+}
+
+#panel nav{
+    float: right;
+    width: 55%;
+    /*margin-right: 30px;*/
+    height: 50px;/**/
+    /*background-color: red;*/
+
+}
+
+#panel nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly/*between*/;
+}
+
+#panel nav ul li{
+    display: inline-block;
+
+
+}
+
+#panel {
+    background-color: #227B94;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 50px;
+    position: sticky;
+    top: 0;
+    /*opacity: 50;*/
+}
+
+#panel nav ul li a{
+    background-color: #227B94;
+    font-size: 1.5em;
+    word-spacing: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    line-height: 50px;
+    
+    /*display: block;*/ /*из-за этой хуйни ссылки слезли*/
+    /*position: absolute;*/
+
+    /*transition: all 500ms ease;*/
+} 
+#panel nav ul li:not(.active) a:hover:not(.add_ad){
+    background-color: #226394e4;
+    border-bottom: 5px solid #16325B;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#panel .active a{ /*выбранная вкладка на панели*/
+    border-bottom: 5px solid #16325B;
+    border-radius: 5px;
+}
+
+
+#panel .add_ad{
+    border-radius: 10px;
+    background-color: #D91656;
+    border: none;
+    color: #fff;
+    padding: 6px;
+    height: 36px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+#panel .add_ad:hover{
+    background-color: #c2134d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*.container{
+    width: 600px;
+    /*display: flex;
+    flex-wrap: wrap;*/
+/*}*/
+
+.avatar_name{
+    display: flex;
+}
+
+.name_and_edit{
+    margin: 20px;
+}
+
+.list{
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.container .avatar{
+    width: 160px;
+    height: 160px;
+    border-radius: 64px;
+    object-fit: cover;
+    margin: 0 10px 10px 0;
+}
+
+.container a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.exit{
+    background-color: rgb(255, 15, 15);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.exit:hover{
+    background-color: rgb(210, 15, 15);
+}
+
+.list input{
+    height: 16px;
+    width: 16px;
+    margin: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer{
+    margin-top: 50px;
+    background-color: #3d3d3d;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+#footer a{
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    /*border-top: 4px solid silver;*/
+}

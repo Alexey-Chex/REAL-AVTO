@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новое объявление</title>
+    <link rel="stylesheet" href="css/add_ad.css">
+</head>
+<body>
+    
+
+
+
+    <div id="header">
+        
+    </div>
+    <div id="panel">
+
+        <span class="logo">real-auto</span>
+        <nav>
+            <ul>
+                <li><a href="./real-auto.html">Поиск</a></li>
+                <li><a href="./favourites.html">Избранное</a></li>
+                <li><a href="./chats.html">Чаты</a></li>
+                <li><a href="./profile.html">Профиль</a></li>
+
+            </ul>
+        </nav>
+
+
+
+    </div>
+
+    <div id="main">
+
+        <div class="container">
+
+            <h1>Новое объявление</h1>
+
+            <div class="main_inf">
+                <div class="text_inf">
+                    <label for="brand">Производитель</label><br>
+                    <input type="text" id="brand"><br>
+                    <label for="model">Модель</label><br>
+                    <input type="text" id="model"><br>
+                    <label for="generation">Поколение</label><br>
+                    <input type="text" id="generation"><br>
+                </div>
+
+                <div class="digit_inf">
+                    <label for="year">Год</label><br>
+                    <input type="number" class="inputValue" id="year" max="9999999999"><br>
+                    <label for="mileage">Пробег</label><br>
+                    <input type="number" class="inputValue" id="mileage" max="9999999999"><br>
+                    <label for="price">Цена</label><br>
+                    <input type="number" class="inputValue" id="price" max="9999999999"><br>
+                </div>
+
+            </div>
+
+
+            <h1>Добавление фотографий</h1>
+
+            <div class="album">
+
+                <img id="main_photo" src="./images/kaiyi.png" alt="photo">
+
+                <img src="./images/mem.png" alt="photo">
+                <img src="./images/mazda.png" alt="photo">
+                <img src="./images/photo.png" alt="photo">
+                <img src="./images/photo.png" alt="photo">
+                <img src="./images/photo.png" alt="photo">
+                <img src="./images/photo.png" alt="photo">
+                <img src="./images/photo.png" alt="photo">
+                <img src="./images/photo.png" alt="photo">
+                <button class="add_photo">+</button>
+
+            </div>
+
+            <h1>Описание</h1>
+
+            <textarea name="" id="" placeholder="Напишите что-нибудь о своем автомобиле..." maxlength="3000" spellcheck="true"></textarea>
+
+            <h1>Дополнительная информация</h1>
+
+            <div class="add_inf">
+                
+
+
+
+
+                <p>Коробка передач</p>
+        
+                <ul class="radio">
+                    <li><input type="radio" name="transmission" id="MT"> <label for="MT">Механическая</label><br></li>
+                    <li><input type="radio" name="transmission" id="AT"> <label for="AT">Автоматическая</label><br></li>
+                    <li><input type="radio" name="transmission" id="AMT"> <label for="AMT">Робот</label><br></li>
+                    <li><input type="radio" name="transmission" id="CVT"> <label for="CVT">Вариатор</label><br></li>
+                    
+                </ul>
+                
+
+                <p>Привод</p>
+                <ul class="radio">
+                    <li><input type="radio" name="drive" id="FD"> <label for="FD">Передний</label><br></li>
+                    <li><input type="radio" name="drive" id="BD"> <label for="BD">Задний</label><br></li>
+                    <li><input type="radio" name="drive" id="AD"> <label for="AD">Полный</label><br></li>
+                    
+                </ul>
+        
+                <p>Тип двигателя</p>
+                <ul class="radio">
+                    <li><input type="radio" name="engine" id="Gazoline"> <label for="Gazoline">Бензин</label><br></li>
+                    <li><input type="radio" name="engine" id="Diesel"> <label for="Diesel">Дизель</label><br></li>
+                    <li><input type="radio" name="engine" id="Gas"> <label for="Gas">Газ</label><br></li>
+                    <li><input type="radio" name="engine" id="Hybrid"> <label for="Hybrid">Гибрид</label><br></li>
+                    <li><input type="radio" name="engine" id="Electro"> <label for="Electro">Электро</label><br></li>
+                    
+                </ul>
+                
+        
+                <label for="EV" class="title">Объем двигателя</label><br>
+                <input type="number" class="inputValue" id="EV" max="9999999999">л<br>
+        
+                <label for="power" class="title">Мощность двигателя</label><br>
+                <input type="number" class="inputValue" id="power" max="9999999999">л. с.<br>
+        
+        
+                <p>Расположение руля</p>
+                <ul class="radio">
+                    <li><input type="radio" name="wheel" id="Left"> <label for="Left">Левый</label><br></li>
+                    <li><input type="radio" name="wheel" id="Right"> <label for="Right">Правый</label><br></li>
+        
+                </ul>
+        
+                <p>Состояние</p>
+                <ul class="radio">
+                    <li><input type="radio" name="condition" id="Not_broken"> <label for="Not_broken">Битый</label><br></li>
+                    <li><input type="radio" name="condition" id="Broken"> <label for="Broken">Не битый</label><br></li>
+        
+                </ul>
+        
+                <p>Тип кузова<p>
+                <ul class="radio">
+                    <li><input type="radio" name="type" id="Sedan"> <label for="Sedan">Седан</label><br></li>
+                    <li><input type="radio" name="type" id="Hatchback5"> <label for="Hatchback5">Хэтчбэк 5-дверный</label><br></li>
+                    <li><input type="radio" name="type" id="Hatchback3"> <label for="Hatchback3">Хэтчбэк 3-дверный</label><br></li>
+                    <li><input type="radio" name="type" id="Coupe"> <label for="Coupe">Купе</label><br></li>
+                    <li><input type="radio" name="type" id="Jeep5"> <label for="Jeep5">Внедорожник 5-дверный</label><br></li>
+                    <li><input type="radio" name="type" id="Jeep3"> <label for="Jeep3">Внедорожник 3-дверный</label><br></li>
+                    <li><input type="radio" name="type" id="Liftback"> <label for="Liftback">Лифтбэк</label><br></li>
+                    <li><input type="radio" name="type" id="Universal"> <label for="Universal">Универсал</label><br></li>
+                    <li><input type="radio" name="type" id="Pickup"> <label for="Pickup">Пикап</label><br></li>
+                    <li><input type="radio" name="type" id="Minivan"> <label for="Minivan">Минивэн</label><br></li>
+                    <li><input type="radio" name="type" id="Van"> <label for="Van">Фургон</label><br></li>
+                    <li><input type="radio" name="type" id="Cabriolet"> <label for="Cabriolet">Кабриолет</label><br></li>
+        
+                </ul>
+
+
+
+            </div>
+
+            <button class="done">Разместить объявление</button>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <div id="footer">
+        email: <a href="mailto:rusgul0004@gmail.com">rusgul0004@gmail.com</a>
+    </div>
+
+
+</body>
+</html>

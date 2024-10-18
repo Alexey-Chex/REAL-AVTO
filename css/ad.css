@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /*background-color: #212121;*/
+    background: linear-gradient(163deg, rgba(21,21,22,1) 0%, rgba(14,46,75,1) 100%);
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+#header {
+    background-color: #fff;
+    height: 250px;
+    background-size: 100% auto;
+    top: 0px;
+    background-image: url("../images/mazda.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+
+.logo{
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+    line-height: 50px;
+    margin-left: 3%;
+}
+
+#panel nav{
+    float: right;
+    width: 55%;
+    /*margin-right: 30px;*/
+    height: 50px;/**/
+    /*background-color: red;*/
+
+}
+
+#panel nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly/*between*/;
+}
+
+#panel nav ul li{
+    display: inline-block;
+
+
+}
+
+#panel {
+    background-color: #227B94;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 50px;
+    position: sticky;
+    top: 0;
+    /*opacity: 50;*/
+}
+
+#panel nav ul li a{
+    background-color: #227B94;
+    font-size: 1.5em;
+    font-weight: 300;
+    word-spacing: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    
+    /*display: block;*/ /*из-за этой хуйни ссылки слезли*/
+    /*position: absolute;*/
+
+    /*transition: all 500ms ease;*/
+} 
+#panel nav ul li:not(.active) a:hover:not(.add_ad){
+    background-color: #226394e4;
+    border-bottom: 5px solid #16325B;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#panel .active a{ /*выбранная вкладка на панели*/
+    border-bottom: 5px solid #16325B;
+    border-radius: 5px;
+}
+
+
+#panel .add_ad{
+    border-radius: 10px;
+    background-color: #D91656;
+    border: none;
+    color: #fff;
+    padding: 6px;
+    height: 36px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+#panel .add_ad:hover{
+    background-color: #c2134d;
+}
+
+
+
+
+#main{
+    /*width: 1345px;*/
+    margin: 0 auto;
+    display: flex;
+}
+
+#main .album #selected_photo{
+    width: 656px;
+    height: 369px;
+}
+
+#main .album{
+    /*float: left;*/
+    width: 660px;/*656*/
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    margin: 0 20px;
+}
+
+#main .album img{
+    /*99 176*/
+    width: 128px;
+    height: 72px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 0 2px 4px 2px;
+}
+
+
+
+
+
+
+#main .text{
+    width: 625px;
+    /*float: right;*/
+    margin-right: 20px;
+    text-align: left;
+}
+
+    #main .title{
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#main .price{
+    background-color: #226394e4;
+    border-radius: 5px;
+    width: auto;
+    padding: 0 5px;
+    font-size: 1.5em;
+}
+
+#main .like{
+    background-color: #e30d66;
+    border-radius: 5px;
+    width: auto;
+    padding: 0 6px;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+#main .like:hover{
+    background-color: #fff;
+    color: #e30d66;
+    cursor: pointer;
+}
+
+#main .chat{
+    background-color: #33b50f;
+    border-radius: 5px;
+    width: auto;
+    padding: 0 6px;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+#main .chat:hover{
+    background-color: #2b940d;
+    cursor: pointer;
+}
+
+#main h{
+    font-size: 1.5em;
+}
+
+#main ul{
+    list-style: none;
+    color: #ffffffab;
+}
+
+#main li{
+    display: grid;
+    grid-template-columns: 180px auto;;
+}
+
+#main .characteristic{
+    color: #fff;
+}
+
+
+
+
+
+
+
+#footer{
+    float: left;
+    margin-top: 50px;
+    background-color: #3d3d3d;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#footer a{
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    /*border-top: 4px solid silver;*/
+}

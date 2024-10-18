@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /*background-color: #212121;*/
+    background: linear-gradient(163deg, rgba(21,21,22,1) 0%, rgba(14,46,75,1) 100%);
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 400;
+    color: #fff;
+
+}
+/*
+#header {
+    background-color: #fff;
+    height: 250px;
+    background-size: 100% auto;
+    top: 0px;
+    background-image: url("../images/mazda.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+*/
+
+
+.logo{
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+    line-height: 50px;
+    margin-left: 3%;
+}
+
+#panel nav{
+    float: right;
+    width: 55%;
+    /*margin-right: 30px;*/
+    height: 50px;/**/
+    /*background-color: red;*/
+
+}
+
+#panel nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly/*between*/;
+}
+
+#panel nav ul li{
+    display: inline-block;
+
+
+}
+
+#panel {
+    background-color: #227B94;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 50px;
+    position: sticky;
+    top: 0;
+    /*opacity: 50;*/
+}
+
+#panel nav ul li a{
+    background-color: #227B94;
+    font-size: 1.5em;
+    word-spacing: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    line-height: 50px;
+    
+    /*display: block;*/ /*из-за этой хуйни ссылки слезли*/
+    /*position: absolute;*/
+
+    /*transition: all 500ms ease;*/
+} 
+#panel nav ul li:not(.active) a:hover:not(.add_ad){
+    background-color: #226394e4;
+    border-bottom: 5px solid #16325B;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#panel .active a{ /*выбранная вкладка на панели*/
+    border-bottom: 5px solid #16325B;
+    border-radius: 5px;
+}
+
+
+#panel .add_ad{
+    border-radius: 10px;
+    background-color: #D91656;
+    border: none;
+    color: #fff;
+    padding: 6px;
+    height: 36px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+#panel .add_ad:hover{
+    background-color: #c2134d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#main{
+    width: 100%;
+    /*display: flex;
+    justify-content: center;
+    align-items: flex-start;*/
+}
+
+#main a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#main .chat{
+    background-color: rgb(85, 85, 85, 0.15);
+    width: 600px;
+    height: calc(100vh - 125px);
+    border-radius: 20px;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#main .chat .chat_header{
+    background-color: rgba(85, 85, 85, 0.3);
+    display: flex;
+    width: 580px;
+    align-items: center;
+    height: 50px;
+    border-radius: 20px;
+    /*line-height: 50px;*/
+    padding: 10px;
+}
+
+
+#main .chat .chat_header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    margin-right: 8px;
+    object-fit: cover;
+}
+
+#main .chat .chat_header_text{
+    display: block;
+}
+
+#main .chat .chat_header .name{
+    font-weight: 400;
+    font-size: 1.5em;
+    
+}
+
+#main .chat .chat_header .car{
+    font-weight: 300;
+    
+}
+
+#main .price{
+    background-color: #226394e4;
+    border-radius: 5px;
+    width: auto;
+    padding: 0 5px;
+    margin: 0 5px 0 5px;
+}
+
+
+
+
+
+#main .chat .chat_main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+}
+
+#main .chat .chat_main .date{
+    padding: 3px;
+    align-self: center;
+    color: #ffffffab;
+}
+
+#main .chat .chat_main img{
+    max-width: 220px;
+    max-height: 400px;
+    border-radius: 10px;
+}
+
+#main .chat .chat_main .my_mes{
+    margin: 5px;
+    padding: 8px;
+    /*width: auto;*/
+    max-width: 240px;
+    background-color: #226394e4;
+    border-radius: 15px;
+    align-self: flex-end;
+}
+
+#main .chat .chat_main .senders_mes{
+    margin: 5px;
+    padding: 8px;
+    width: auto;
+    max-width: 240px;
+    background-color: #226394e4;
+    border-radius: 15px;
+    align-self: flex-start;
+}
+
+#main .chat .chat_main .mes_time{
+    color: #ffffffab;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#main .chat_footer{
+    background-color: rgba(85, 85, 85, 0.3);
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+}
+
+#main .chat_footer input{
+    width: 70%;
+    height: 40px;
+    margin: auto;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    font-size: 16px;
+    padding: 3px;
+}
+
+#main .chat_footer .more{
+    margin: auto;
+    font-size: 24px;
+    padding: 3px;
+    color: #ffffffab;
+}
+
+#main .chat_footer img{
+    height: 28px;
+    width: 28px;
+    margin: auto;
+    padding: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+#footer{
+    margin-top: 50px;
+    background-color: #3d3d3d;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+#footer a{
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    /*border-top: 4px solid silver;
+
+}*/

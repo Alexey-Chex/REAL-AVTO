@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /*background-color: #212121;*/
+    background: linear-gradient(163deg, rgba(21,21,22,1) 0%, rgba(14,46,75,1) 100%);
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+#header {
+    background-color: #fff;
+    height: 250px;
+    background-size: 100% auto;
+    top: 0px;
+    background-image: url("../images/mazda.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+
+.logo{
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+    line-height: 50px;
+    margin-left: 3%;
+}
+
+#panel nav{
+    float: right;
+    width: 45%;
+    /*margin-right: 30px;*/
+    height: 50px;/**/
+    /*background-color: red;*/
+
+}
+
+#panel nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly/*between*/;
+}
+
+#panel nav ul li{
+    display: inline-block;
+
+
+}
+
+#panel {
+    background-color: #227B94;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 50px;
+    position: sticky;
+    top: 0;
+    /*opacity: 50;*/
+}
+
+#panel nav ul li a{
+    background-color: #227B94;
+    font-size: 1.5em;
+    word-spacing: 10px;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    line-height: 50px;
+    
+    /*display: block;*/ /*из-за этой хуйни ссылки слезли*/
+    /*position: absolute;*/
+
+    /*transition: all 500ms ease;*/
+} 
+#panel nav ul li:not(.active) a:hover{
+    background-color: #226394e4;
+    border-bottom: 5px solid #16325B;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#panel .active a{ /*выбранная вкладка на панели*/
+    border-bottom: 5px solid #16325B;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+#main{
+    
+    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container{
+    width: 600px;
+    display: block;
+    text-align: center;
+}
+
+.main_inf{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+.container h1{
+    margin: 20px;
+}
+
+.container .text_inf input{
+    height: 32px;
+    width: 300px;
+    border-radius: 8px;
+    border: none;
+    padding: 3px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.container .digit_inf input{
+    height: 32px;
+    width: 200px;
+    border-radius: 8px;
+    border: none;
+    padding: 3px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.container .main_inf label{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.container .album{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.album img{
+    height: 81px;
+    width: 144px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 0 3px 6px 3px;
+
+}
+
+.album .add_photo{
+    background-color: rgba(111, 111, 111, 0.3);
+    color: #737373;
+    font-size: 40px;
+    height: 81px;
+    width: 144px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 3px 6px 3px;
+    cursor: pointer;
+}
+
+.album .add_photo:hover{
+    background-color: rgba(111, 111, 111, 0.5);
+}
+
+
+
+
+.container textarea{
+    background-color: rgba(85, 85, 85, 0.4);
+    color: #fff;
+    border-radius: 10px;
+    width: 600px;
+    height: 100px;
+    border: none;
+    font-size: 18px;
+    padding: 3px;
+    resize: none;
+    outline: none;
+    
+}
+
+.container .add_inf ul{
+    list-style: none;
+}
+
+.container .add_inf{
+    width: 100%;
+    text-align: left;
+    
+    
+    margin: 0 0 0 200px;/*костыль*/
+}
+
+.container .radio{
+    margin-bottom: 20px;
+}
+
+.container .title, p{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.container .add_inf input[type="number"]{
+    width: 160px;
+    height: 24px;
+    border-radius: 8px;
+    border: none;
+    padding: 3px;
+    margin: 0 5px 20px 0;
+}
+
+
+.container .done{
+    border: none;
+    border-radius: 10px;
+    background-color: #33b50f;
+    padding: 12px;
+    color: #fff;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.container .done:hover{
+    background-color: #2b940d;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer{
+    margin-top: 50px;
+    background-color: rgba(85, 85, 85, 0.4);
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+#footer a{
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    /*border-top: 4px solid silver;*/
+}

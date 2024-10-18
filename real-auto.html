@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Руслан Гулько">
+    <title>Real-auto</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="header">
+
+    </div>
+    <div id="panel">
+
+        <span class="logo">real-auto</span>
+        <nav>
+            <ul>
+                <li class="active"><a href="#">Поиск</a></li>
+                <li><a href="./favourites.html">Избранное</a></li>
+                <li><a href="./chats.html">Чаты</a></li>
+                <li><a href="./profile.html">Профиль</a></li>
+
+                <li><a href="./add_ad.html" class="add_ad">Разместить объявление</a></li>
+            </ul>
+
+        </nav>
+
+
+
+    </div>
+
+    <div id="main">
+
+
+
+        <div class="ad">
+            <a href="./ad.html" target="_blank">
+                <p><span class="title">Mazda RX-8 2004</span> - 98000 км AT 1.3 Бензин</p>
+            </a><br>
+            <div class="album">
+
+                <a href="./ad.html" target="_blank">
+                    <img class="first" src="./images/photo.png" alt="photo">
+                    <img src="./images/photo.png" alt="photo">
+                    <img src="./images/photo.png" alt="photo">
+                    <img src="./images/photo.png" alt="photo">
+                    <img src="./images/photo.png" alt="photo">
+                </a>    
+                <div class="scroll">></div>
+
+            </div><br>
+            
+            <a href="./ad.html" target="_blank"><span class="price">750 000 p</span></a><span class="like">❤</span><span class="chat">Написать</span>
+            
+        </div>
+
+
+        <div class="ad">
+            <a href="./ad.html" target="_blank">
+                <p><span class="title">Mitsubishi Lancer Cedia 2001</span> - 268000 км AT 2.0 Бензин</p>
+            </a><br>
+
+            <div class="album">
+
+                <a href="./ad.html" target="_blank">
+                    <img class="first" src="./images/photo.png" alt="photo">
+                    <img src="./images/photo.png" alt="photo">
+                    <img src="./images/photo.png" alt="photo">
+                    <img src="./images/photo.png" alt="photo">
+                    <img src="./images/photo.png" alt="photo">
+                </a>
+                
+                <div class="scroll">></div>
+            </div><br>
+            
+            <a href="./ad.html" target="_blank"><span class="price">540 000 p</span></a><span class="like">❤</span><span class="chat">Написать</span>
+        </div>
+
+        
+        <div class="ad">
+            <a href="./ad.html" target="_blank">
+                <p><span class="title">Kaiyi E5 2023</span> - 6700 км CVT 1.5 Бензин</p>
+            </a><br>
+            <div class="album">
+                
+                <a href="./ad.html" target="_blank">
+                    <img class="first" src="./images/kaiyi.png" alt="photo">
+                    <img src="./images/photo.png" alt="photo">
+                    <img src="./images/photo.png" alt="photo">
+                    <img src="./images/photo.png" alt="photo">
+                    <img src="./images/photo.png" alt="photo">
+                </a>
+                
+                <div class="scroll">></div>
+            </div><br>
+
+            <a href="./ad.html" target="_blank"><span class="price">1 990 000 p</span></a><span class="like">❤</span><span class="chat">Написать</span>
+        </div>
+<!--❤♥-->
+
+
+
+
+
+
+
+
+    </div>
+
+    <div id="aside">
+        <form action="" method="post">
+
+        <label for="brand">Производитель</label><br>
+        <input type="text" id="brand"><br>
+        <label for="model">Модель</label><br>
+        <input type="text" id="model"><br>
+        <label for="generation">Поколение</label><br>
+        <input type="text" id="generation"><br>
+
+        <label for="start_price">Цена</label><br>
+        <input type="number" class="inputValue" id="start_price" placeholder="От" max="9999999999">-<input type="number" class="inputValue" placeholder="До" max="9999999999"><br>
+
+        <label for="start_mileage">Пробег</label><br>
+        <input type="number" class="inputValue" id="start_mileage" placeholder="От" max="9999999999">-<input type="number" class="inputValue" placeholder="До" max="9999999999"><br>
+
+        <label for="start_year">Год</label><br>
+        <input type="number" class="inputValue" id="start_year" placeholder="От" maxlength="10">-<input type="number" class="inputValue" placeholder="До" maxlength="10"><br>
+
+
+
+        <!--тут лэйблы нахуй не нужны, заменить на р-->
+        <label for="transmission">Коробка передач</label><br>
+        <ul class="checkbox">
+            <li><input type="checkbox" id="MT"> <label for="MT">Механическая</label><br></li>
+            <li><input type="checkbox" id="AT"> <label for="AT">Автоматическая</label><br></li>
+            <li><input type="checkbox" id="AMT"> <label for="AMT">Робот</label><br></li>
+            <li><input type="checkbox" id="CVT"> <label for="CVT">Вариатор</label><br></li>
+            
+        </ul>
+
+
+        <label for="transmission">Привод</label><br>
+        <ul class="checkbox">
+            <li><input type="checkbox" id="FD"> <label for="FD">Передний</label><br></li>
+            <li><input type="checkbox" id="BD"> <label for="BD">Задний</label><br></li>
+            <li><input type="checkbox" id="AD"> <label for="AD">Полный</label><br></li>
+            
+        </ul>
+
+
+        <label for="engine">Тип двигателя</label><br>
+        <ul class="checkbox">
+            <li><input type="checkbox" id="Gazoline"> <label for="Gazoline">Бензин</label><br></li>
+            <li><input type="checkbox" id="Diesel"> <label for="Diesel">Дизель</label><br></li>
+            <li><input type="checkbox" id="Gas"> <label for="Gas">Газ</label><br></li>
+            <li><input type="checkbox" id="Hybrid"> <label for="Hybrid">Гибрид</label><br></li>
+            <li><input type="checkbox" id="Electro"> <label for="Electro">Электро</label><br></li>
+            
+        </ul>
+        
+
+        <label for="start_EV">Объем двигателя (л)</label><br>
+        <input type="number" class="inputValue" id="start_EV" placeholder="От" max="9999999999">-<input type="number" class="inputValue" placeholder="До" max="9999999999"><br>
+
+        <label for="start_power">Мощность двигателя (л. с.)</label><br>
+        <input type="number" class="inputValue" id="start_power" placeholder="От" max="9999999999">-<input type="number" class="inputValue" placeholder="До" max="9999999999"><br>
+
+
+        <label for="engine">Расположение руля</label><br>
+        <ul class="checkbox">
+            <li><input type="checkbox" id="Left"> <label for="Left">Левый</label><br></li>
+            <li><input type="checkbox" id="Right"> <label for="Right">Правый</label><br></li>
+
+        </ul>
+
+        <label for="engine">Состояние</label><br>
+        <ul class="checkbox">
+            <li><input type="checkbox" id="Not_broken"> <label for="Not_broken">Битый</label><br></li>
+            <li><input type="checkbox" id="Broken"> <label for="Broken">Не битый</label><br></li>
+
+        </ul>
+
+        <label for="type">Тип кузова</label><br>
+        <ul class="checkbox">
+            <li><input type="checkbox" id="Sedan"> <label for="Sedan">Седан</label><br></li>
+            <li><input type="checkbox" id="Hatchback5"> <label for="Hatchback5">Хэтчбэк 5-дверный</label><br></li>
+            <li><input type="checkbox" id="Hatchback3"> <label for="Hatchback3">Хэтчбэк 3-дверный</label><br></li>
+            <li><input type="checkbox" id="Coupe"> <label for="Coupe">Купе</label><br></li>
+            <li><input type="checkbox" id="Jeep5"> <label for="Jeep5">Внедорожник 5-дверный</label><br></li>
+            <li><input type="checkbox" id="Jeep3"> <label for="Jeep3">Внедорожник 3-дверный</label><br></li>
+            <li><input type="checkbox" id="Liftback"> <label for="Liftback">Лифтбэк</label><br></li>
+            <li><input type="checkbox" id="Universal"> <label for="Universal">Универсал</label><br></li>
+            <li><input type="checkbox" id="Pickup"> <label for="Pickup">Пикап</label><br></li>
+            <li><input type="checkbox" id="Minivan"> <label for="Minivan">Минивэн</label><br></li>
+            <li><input type="checkbox" id="Van"> <label for="Van">Фургон</label><br></li>
+            <li><input type="checkbox" id="Cabriolet"> <label for="Cabriolet">Кабриолет</label><br></li>
+
+        </ul>
+
+
+
+
+
+
+
+
+
+
+
+        <br><br>
+        
+    </form>
+    </div>
+    <div id="footer">
+        Электронная почта: <a href="mailto:rusgul0004@gmail.com">rusgul0004@gmail.com</a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
